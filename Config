@@ -1,4 +1,5 @@
 getgenv().Mob = {
+    ['Key'] = "Luarmor-Key",
     ['Silent'] = {
         Normal = {
             Enabled = true,
@@ -125,4 +126,4 @@ getgenv().Mob = {
     },
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lurklight/Mob.cc/main/Mob.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xfarzad/Sources/main/mob"))()
