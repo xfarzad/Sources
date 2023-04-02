@@ -66,6 +66,7 @@ getgenv().Mob = {
         CamLock = {
             Show = true,
             Use_Radius = false,
+            Only_In_Fov = false,
             Radius = 20,
             Model = 'Circle'
         },
