@@ -15,7 +15,7 @@ mouse.KeyDown:Connect(function(fd)
           if getgenv().Config.Notification == true then
           game.StarterGui:SetCore("SendNotification", {
             Title = "HARD R FARZAD",
-            Text = "FD IS A SKID -- Disabled🔥🔥",
+            Text = "FD RICHER THAN YOU -- Disabled🔥🔥",
             Icon = "rbxassetid://57254792",
             Duration = 3,
             })
@@ -25,7 +25,7 @@ mouse.KeyDown:Connect(function(fd)
           if getgenv().Config.Notification == true then
           game.StarterGui:SetCore("SendNotification", {
             Title = "HARD R FARZAD",
-            Text = "FD IS A SKID -- Enabled🔥🔥",
+            Text = "FD RICHER THAN YOU -- Enabled🔥🔥",
             Icon = "rbxassetid://57254792",
             Duration = 3,
             })
