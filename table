@@ -1,37 +1,44 @@
-#1 da hood streamable script with most features that work the best and has 0 fps drops
 
-( blatant HVH gui coming out soon once synapse or scriptware are up which will be also #1 including bullet tp walkable desync etc. )
-
-( current buyers will get blatant HVH gui for free once its out and external )
-
-( everything is optional and can be edited )
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-#1 resolver
-#1 gunfov with more features than any other script
-#1 script with most features
-#1 triggerbot
-best esp with over 20 features that doesn't fps drop and is toggleabble and streamproof
-anti aim viewer
-memory spoofer and recv spoofer
-#1 fastest and most stable macro
-gunsorting ( tired of joining a dahood game / respawning and having to set up ur guns? u can now do that instant by clicking 1 single keybind )
-keybind to auto animation
-noclip macro where u click 1 button infront of a wall and it spams ur guns so u can noclip very legit
-auto 360
-fake spike
-auto reload
-auto mute boombox
-auto low gfx
-wall check knocked check grabbed check crew check anti ground shot check any kind of check
-XYZ shake and XYZ airshot shake
-aimassist easing styles, mouse mode, keyboard mode, hold mode, over 15 features just for aimassist
-Panic keybind that will turn everything off
-crash keybind that will crash u in a legit way mid pc-checks
-auto kick if a mod joins
-chat commands to change fov size etc like "/e fov 120"
+                        #1 da hood streamable script with most features that work the best and has 0 fps drops
+
+                        ( blatant HVH gui coming out soon once synapse or scriptware are up which will be also #1 including bullet tp walkable desync etc. )
+
+                        ( current buyers will get blatant HVH gui for free once its out and external )
+
+                        ( everything is optional and can be edited )
 
 
+                        #1 resolver
+                        #1 gunfov with more features than any other script
+                        #1 script with most features
+                        #1 triggerbot
+                        best esp with over 20 features that doesn't fps drop and is toggleabble and streamproof
+                        anti aim viewer
+                        memory spoofer and recv spoofer
+                        #1 fastest and most stable macro
+                        gunsorting ( tired of joining a dahood game / respawning and having to set up ur guns? u can now do that instant by clicking 1 single keybind )
+                        keybind to auto animation
+                        noclip macro where u click 1 button infront of a wall and it spams ur guns so u can noclip very legit
+                        auto 360
+                        fake spike
+                        auto reload
+                        auto mute boombox
+                        auto low gfx
+                        wall check knocked check grabbed check crew check anti ground shot check any kind of check
+                        XYZ shake and XYZ airshot shake
+                        aimassist easing styles, mouse mode, keyboard mode, hold mode, over 15 features just for aimassist
+                        Panic keybind that will turn everything off
+                        crash keybind that will crash u in a legit way mid pc-checks
+                        auto kick if a mod joins
+                        chat commands to change fov size etc like "/e fov 120"
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+script to look at :
 
 
 getgenv().Shhhh = {
