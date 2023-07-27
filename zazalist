@@ -1,4 +1,4 @@
-local banlist = {
+return {
     "1055921504237408257", -- refund attempt, Niosh Patel
     "720828736286621696", -- refund attempt, Davis Adiuku
     "1073451054831767653", -- refund attempt, Vroxhy V
