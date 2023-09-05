@@ -1,6 +1,7 @@
 local username = "irllylovefatcats"
 local target = "imlovinit212"
 local keybind = "Q"
+local bringall = false
 
 --[[
 
@@ -19,9 +20,15 @@ you have to join first and execute when no one is in the server otherwise it won
 
 
 game:GetService("UserInputService").InputBegan:Connect(function(i, t)
-	if not t and i.KeyCode == Enum.KeyCode[keybind:upper()] then
-		game:GetService("ReplicatedStorage").MainEvent:FireServer("VIP_CMD", "Summon", game:GetService("Players")[target])
-	end
+    if not t and i.KeyCode == Enum.KeyCode[keybind:upper()] then
+            if not bringall then
+        game:GetService("ReplicatedStorage").MainEvent:FireServer("VIP_CMD", "Summon", game:GetService("Players")[target])
+            elseif bringall then
+                local players = game:GetService("Players"):GetPlayers()
+                for _, player in pairs(players) do
+                    game:GetService("ReplicatedStorage").MainEvent:FireServer("VIP_CMD", "Summon", player.Name)
+                end
+    end
 end)
 
 
