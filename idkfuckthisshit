@@ -1,0 +1,3 @@
+script_key = getgenv().idkfuckthisshit.BladeBall.Key;
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/367423cac96b28be79734bc25e995fb1.lua"))()
