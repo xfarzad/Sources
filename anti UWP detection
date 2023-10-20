@@ -1,7 +1,4 @@
---[[
-    Updated to allow exploit calls of tostring without erroring LOL
-    credits to idk some v3rm dude
-]]
+
 
 local typeof = typeof
 local hookfunc = hookfunction
