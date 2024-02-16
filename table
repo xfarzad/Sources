@@ -89,7 +89,7 @@ https://shhhh.lol
 getgenv().Shhhh = {
     ['Options'] = {
         Key = 'keyhere', -- [ replace [keyhere] with your key ]
-        Version = 'z1yd', -- [ "z1yd" has the best resolver in the game ) ( v2yp hits the most and still has a good resolver ( recommended ) ]
+        Version = 'V2.0', -- [ V2.1 has the best resolver in the game ) ( V2.0 hits the most and still has a good resolver ( recommended ) ]
         Intro = false, -- [ stars a intro ]
         ['UnlockFps'] = {
             Enabled = true, -- [ basically fps unlocker ]
@@ -300,7 +300,7 @@ getgenv().Shhhh = {
     ['GunSorting'] = {
         Enabled = true,
         SortFood = true,
-        Keybind = 'Z', -- [ always big letters ]
+        Keybind = 'Z',
         FirstSlot = '[Double-Barrel SG]',
         SecondSlot = '[Revolver]',
         ThirdSlot = '[TacticalShotgun]',
@@ -466,7 +466,3 @@ getgenv().Shhhh = {
           Distance_Value = 1000, -- lower to see less
     },
 }
-
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xfarzad/Shhhh/main/Loader", true))()
-
