@@ -16,4 +16,5 @@ banlist = {
     "692486733203243100", -- refund attempt, Anna Castrellon
     "1135909569470681119", -- poor nerd who refunded -- Christopher Mortimer
     "963613706275659866", -- refund attempt
+    "800676975328231474", -- key sharing
 }
