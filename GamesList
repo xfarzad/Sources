@@ -1,4 +1,4 @@
-local Games = {
+Games = {
     [2788229376]  = {Number = 1,  Name = 'Da Hood',               Remote = 'MainEvent', Argument = 'UpdateMousePos'},
     [9825515356]  = {Number = 2,  Name = 'Hood Customs',          Remote = 'MainEvent', Argument = 'MousePosUpdate'},
     [5602055394]  = {Number = 3,  Name = 'Hood Modded',           Remote = 'MAINEVENT', Argument = 'MousePos'},
