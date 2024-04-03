@@ -15,13 +15,11 @@
 
                         ( everything is optional and can be edited )
 
-                        ( works on any da hood related game ( hood customs, untitled hood, da hood modded, da hood, Da DownHill, Da Uphill, Dah hood and so on )
+                        ( works on all da hood copies including hood customs)
 
                         
-  
 
-
-                        Supported executors : ( scriptware, scriptware mac, synapse, krnl, electron, fluxus, basically anything )
+                        Supported executors : ( everything )
 
 
 
@@ -106,7 +104,6 @@ getgenv().Shhhh = {
                 Color = BrickColor.new("Light reddish violet"), -- [ https://robloxapi.github.io/ref/type/BrickColor.html ]
             },
         },
-        ['OptimizeUWP'] = false, -- optimizes UWP ( by alot / unlocks hz, makes game smoother, more fps)
     },
     ['Panic'] = {
         Enabled = false,
@@ -258,7 +255,7 @@ getgenv().Shhhh = {
                 },
         },
         ['TrashTalk'] = {
-            Enabled = true,
+            Enabled = false,
             KeyBind = "t", -- [ whenever you click this keybind it spams the messages randomly ]
             Method = "2", -- [ 1 = ( random message from the table ) 2 = ( all messages in a row ) ]
             Delay = 0.3, -- [ for method 2 ( 0.3 miliseconds currently ) ]
@@ -440,29 +437,51 @@ getgenv().Shhhh = {
         Show_Fov_Silent = '$SFS', -- use true or false only like $SFS true or false
         Show_Fov_AimAssist = '$SFA', -- use true or false only like $SFA true or false
     },
-      ['Esp'] = {
-          Enabled = false,
-          Use_KeyBind = true,
-          KeyBind = Enum.KeyCode.L,
-          HealthBar = false,
-          HealthBar_Full_Color = Color3.fromRGB(7, 23, 255),
-          HealthBar_Low_Color = Color3.fromRGB(255, 4, 4),
-          Boxes = false,
-          Boxes_Color = Color3.fromRGB(255,255,255),
-          HighLight = false,
-          HightLight_Inner_Color = Color3.fromRGB(0, 4, 238),
-          HightLight_OutLine_Color = Color3.fromRGB(255,255,255),
-          Names = false,
-          Names_Color = Color3.fromRGB(255,255,255),
-          Tool = false,
-          Tool_Color = Color3.fromRGB(255,255,255),
-          Tracers = false,
-          Tracers_Position = 15,
-          Tracers_Color = Color3.fromRGB(255,255,255),
-          FaceCamera = true,
-          TeamMates = true,
-          Distance = false,
-          Distance_Color = Color3.fromRGB(255,255,255),
-          Distance_Value = 1000, -- lower to see less
-    },
+    ['Esp'] = {
+        Enabled = false,
+
+        Use_KeyBind = true,
+        KeyBind = Enum.KeyCode.L,
+
+        AutoStep = true, -- // automatically updates the esp
+        CharacterSize = Vector3.new(4, 5.75, 1.5),
+        CharacterOffset = CFrame.new(0, -0.25, 0),
+        UseBoundingBox = false,
+
+        PriorityColor = Color3.new(1,0.25,0.25),
+
+        BoxEnabled = true,
+        BoxCorners = true,
+        BoxDynamic = false,
+        BoxStaticXFactor = 1.3,
+        BoxStaticYFactor = 2.1,
+        BoxColor = Color3.fromRGB(255, 255, 255),
+
+        SkeletonEnabled = true,
+        SkeletonColor = Color3.fromRGB(255, 255, 255),
+        SkeletonMaxDistance = 300,
+
+        ChamsEnabled = true,
+        ChamsInnerColor = Color3.fromRGB(102, 60, 153),
+        ChamsOuterColor = Color3.fromRGB(0, 0, 0),
+        ChamsInnerTransparency = 0.3,
+        ChamsOuterTransparency = 0,
+
+        TextEnabled = true,
+        TextColor = Color3.fromRGB(255, 255, 255),
+        TextLayout = {
+            ['nametag']  = { enabled = true, position = 'top', order = 1 },
+            ['name']     = { enabled = true, position = 'top', order = 2 },
+            ['health']   = { enabled = true, position = 'left', order = 1, bar = 'health' },
+            ['armor']    = { enabled = true, position = 'left', order = 2, bar = 'armor' },
+            ['tool']     = { enabled = true, position = 'bottom', ammo = true, suffix = '', prefix = '', order = 1 },
+            ['distance'] = { enabled = true, position = 'bottom', suffix = 'm', order = 2 },
+        },
+
+        BarLayout = {
+            ['health'] = { enabled = true, position = 'left', order = 1, color_empty = Color3.fromRGB(176, 84, 84), color_full = Color3.fromRGB(140, 250, 140) },
+            ['armor']  = { enabled = true, position = 'left', order = 2, color_empty = Color3.fromRGB(58, 58, 97), color_full = Color3.fromRGB(72, 72, 250) }
+        }
+    }
 }
+
