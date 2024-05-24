@@ -59,11 +59,11 @@
         "Remote": "MAINEVENT",
         "Argument": "MoonUpdateMousePos"
     },
-	"17319408836": {
+   "17319408836": {
         "Number": 10,
         "Name": "OG Da Hood",
         "Remote": "MAINEVENT",
         "Argument": "UpdateMousePos",
-        "Adonis": true
+        "Adonis": true,
     },
 }
