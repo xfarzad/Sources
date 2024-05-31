@@ -1,0 +1,58 @@
+wait(10)
+print("Started Gregg Tracker")
+local player = game.Players.LocalPlayer
+local dungeon = game:GetService("Workspace"):WaitForChild("dungeon")
+local rooms = {"room1", "room2", "room3"}
+local checkInterval = 0.5
+local maxWaitTime = 30 -- Time for gregg waiting to spawn (from the start of script execution)
+function findGreggInRoom(room)
+    local roomFolder = dungeon:FindFirstChild(room)
+    if not roomFolder then return false end
+    for _, child in pairs(roomFolder:GetChildren()) do
+        if child.Name == "Gregg" and child:FindFirstChild("Humanoid") then
+            return true
+        end
+    end
+    return false
+end
+function greggExistsInAnyRoom()
+    for _, room in ipairs(rooms) do
+        if findGreggInRoom(room) then
+            return true
+        end
+    end
+    return false
+end
+while true do
+    local startTime = tick()
+    local greggFound = false
+    while tick() - startTime < maxWaitTime do
+        if greggExistsInAnyRoom() then
+            greggFound = true
+            break
+        end
+        wait(checkInterval)
+    end
+
+    if greggFound then
+        print("Gregg found")
+        while greggExistsInAnyRoom() do
+            wait(checkInterval)
+        end
+        print("Gregg dead, resetting")
+        if player.Character and player.Character:FindFirstChild("Humanoid") then
+            player.Character.Humanoid.Health = 0
+        end
+        wait(2)
+        local args1 = {[1] = {[1] = {["\3"] = "closeRevive"},[2] = "\13"}}
+        if player.PlayerGui:FindFirstChild("RevivePrompt") and player.PlayerGui.RevivePrompt.Enabled == true then
+            game:GetService("ReplicatedStorage"):WaitForChild("dataRemoteEvent"):FireServer(unpack(args1))
+        end
+    else
+        print("Gregg not found in any room within the time limit, killing player")
+        if player.Character and player.Character:FindFirstChild("Humanoid") then
+            player.Character.Humanoid.Health = 0
+        end
+    end
+    wait(checkInterval)
+end
